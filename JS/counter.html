@@ -1,0 +1,32 @@
+<html>
+<head>
+<script language="javascript">
+var i=0,j;
+function startcount()
+{
+	document.f1.t1.value=i;
+	i++;
+	j=setTimeout("startcount()",1000);
+}
+
+function stopcount()
+{
+	clearTimeout(j);
+	i=0;
+}
+
+function clearcount()
+{
+	document.f1.t1.value="";
+}
+</script>
+</head>
+<body>
+<form name="f1">
+<input type="text" name="t1"><br>
+<input type="button" value="Start Counter" onClick="startcount()">
+<input type="button" value="Stop Counter" onClick="stopcount()">
+<input type="button" value="Clear Counter" onClick="clearcount()">
+</form>
+</body>
+</html>

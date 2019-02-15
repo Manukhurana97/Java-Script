@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Timeout Processing Program</title>
+</head>
+<script language="javascript">
+
+timevar=setTimeout("alert('Your time is over')",5000);
+alert(timevar);
+function clearTime()
+{
+ clearTimeout(timevar);
+ alert("This is clear Time out");
+}
+</script>
+<body>
+
+<form>
+<input type="button" value="Click here in 5 seconds" onClick="clearTime()" />
+</form>
+</body>
+</html>
+ 

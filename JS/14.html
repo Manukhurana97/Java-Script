@@ -1,0 +1,31 @@
+<html><head>
+<title>Using Date & Time Object</title>
+<script language="javascript">
+	function fun()
+	{
+		d=new Date();//It extracts the current date & time.
+		h=d.getHours();//Returns the hour(0-23).
+		m=d.getMinutes();//Returns the minutes(0-59).
+		s=d.getSeconds();//Returns the seconds(0-59).
+		time=h+":"+m+":"+s;
+		if(s%2==0)
+		{
+			document.bgColor="blue";
+		}
+		else
+		{
+			document.bgColor="wheat";
+		}
+document.form1.text1.value=time;
+}
+setInterval("fun()",1000);
+//setInterval() method repeatedly executes a function or evaluates expression after timeout has been expired.two parameters passed,first is function name & second is time period in milliseconds.
+</script>
+</head>
+<body bgcolor="#FF99FF">
+<h1>Welcome in My Website</h1>
+<form name="form1">The Time is:
+<input type="text" name="text1" size="10">
+</form>
+</body>
+</html>

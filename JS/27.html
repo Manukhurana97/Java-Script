@@ -1,0 +1,27 @@
+<html>
+<head>
+<!-- The difference is that getElementById will retrieve a single element object with the unique id specified, whereas getElementsByName will retrieve an array of all element objects with the specified tag name.-->
+
+<script type="text/javascript">
+function getElements()
+{
+var x=document.getElementsByName("x1");
+alert(x.length);
+}
+</script>
+</head>
+<body>
+<br>
+<input type="radio" name="x1" value="pizza">
+Pizza:<br>
+<input type="radio" name="x2" value="burger">
+Burger:<br>
+<input type="radio" name="x3" value="snacks">
+Snacks:<br>
+<input type="radio" name="x4" value="cold drinks">
+Cold Drinks:<br><br>
+<input type="button" onClick="getElements()" value="How many elements named 'x'?" />
+
+</body>
+</html>
+

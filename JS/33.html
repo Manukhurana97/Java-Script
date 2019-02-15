@@ -1,0 +1,36 @@
+<html>
+<head>
+<!-- SCREEN REDIRECT-
+you easily create a page that detects the visitor's screen resolution and automatically loads a specific page depending on which resolution is used.
+
+SCREEN	     PAGE URL
+640x480	  http://www.google.com
+800x600	  http://www.gmail.com
+1024x768  http://www.rediff.com	
+OTHER	  http://www.yahoo.com
+-->
+<script>
+var width = screen.width;
+var res =(((!(640-width))*1)+((!(800-width))*2)+((!(1024-width))*3)+((!(1152-width))*4)+((!(1280-width))*5)+((!(1600-width))*6)); 
+
+if(!(res)) 
+res = 1;
+if (res=='1') 
+{
+window.location='http://www.google.com'
+}
+if (res=='2') 
+{
+window.location='http://www.gmail.com'
+}
+if (res=='3') 
+{
+window.location='http://www.rediff.com'
+}
+if (res!='1' && res!='2' && res!='3') 
+{
+window.location='http://www.yahoo.com'
+}
+</script>
+</head>
+</html>

@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<script language="javascript">
+function fun()
+{
+document.f.t1.value="over the mouse";
+}
+function fun1()
+{
+document.f.t1.value="not over the mouse";
+}
+</script>
+</head>
+<form name="f">
+<input type="text" name="t1" value="not over the mouse"/>
+<a href="" onMouseOver="fun()" onMouseOut="fun1()">Link</a>
+</form>
+</html>

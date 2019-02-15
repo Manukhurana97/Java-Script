@@ -1,0 +1,21 @@
+<html>
+<head>
+<title></title>
+<script language="javascript">
+	 col=new Array("red","green","blue","yellow","orange","purple");
+	i=0;
+function colorChange()
+{
+ document.fgColor=col[i];
+	i++;
+	if(i>5)
+	i=0;
+}
+ setInterval("colorChange()",1000);
+</script>
+</head>
+<body>
+<marquee behavior="alternate" 
+onMouseOver="stop()" onMouseOut="start()" ><h1>Welcome My Website</h1></marquee>
+</body>
+</html>

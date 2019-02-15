@@ -1,0 +1,14 @@
+<html>
+<head>
+<title>
+Slate
+</title>
+<script language="javascript">
+var a=" Ducat Institute Faridabad";
+</script>
+<body>
+Write and see the magic.
+<form>
+<textbox name="ta" oninput="this.value=a.slice(0,this.value.length) rows="25" cols="50"></textbox>
+</form>
+</body>

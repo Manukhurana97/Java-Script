@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Using Image Object</title>
+<!-- Using Image Object java script can change images dynamically on a page,without loading another page.--->
+<script language="javascript">
+function img1()
+{
+document.imgp.src="Penguins.jpg";
+}
+function img2()
+{
+ document.imgp.src="Tulips.jpg";
+}
+</script>
+</head>
+<body>
+<form>
+<h1>Using Image Object</h1>
+<a href="http://www.google.com/search?q=Penguins" onMouseOver="img1()" onMouseOut="img2()">
+<img src="Chry.jpg" name="imgp" alt="Image" border="2" height="350" width="450">
+</a>
+</form>
+</body>
+</html>

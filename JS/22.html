@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>First Information Form</title>
+<script language="javascript">
+function show()
+{
+ message1=document.fm.firstname.value;
+ message2=document.fm.lastname.value;
+ message3=document.fm.address.value;
+ message4=document.fm.phone.value;
+ //window.open("url","window name","feature list");
+ showin=window.open("","","width=400,height=300");
+ showin.document.write("<center><h1><font color='red'>THE USER INFORMATION</font></h1><br>");
+ showin.document.write("<font size=5 color='blue'>FIRST NAME :</font>");
+ showin.document.write("<font size=5 color='blue'>"+message1+"</font><br>");
+ showin.document.write("<font size=5 color='blue'>LAST NAME :</font>");
+ showin.document.write("<font size=5 color='blue'>"+message2+"</font><br>");
+ showin.document.write("<font size=5 color='blue'>ADDRESS :</font>");
+ showin.document.write("<font size=5 color='blue'>"+message3+"</font><br>");
+ showin.document.write("<font size=5 color='blue'>PHONE NO :</font>");
+ showin.document.write("<font size=5 color='blue'>"+message4+"</font><br></center>");
+ showin.document.bgColor='yellow';
+}
+</script>
+</head>
+<body>
+<h1>USER INFORMATION</h1>
+Please enter following data, when you will press show button all information will be displayed in a new window:-
+<br>
+<br>
+<form name="fm">
+First name: <input type="text" name="firstname"><br><br>
+Last neme : <input type="text" name="lastname"><br><br>
+Address   :-<br><textarea name="address" rows="5" cols="25">
+</textarea>
+<br><br>
+Phone no  : <input type="text" name="phone" maxlength="10"><br><br>
+<input type="button" value="Show" onClick="show()">
+</form>
+</body>
+</html>

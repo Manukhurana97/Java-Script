@@ -1,0 +1,18 @@
+<html>
+<head>
+<script type="text/javascript">
+function changeText()
+{
+	var userInput=document.getElementById('userInput').value;
+	document.getElementById('para').innerHTML = userInput;
+}
+</script>
+</head>
+<body>
+<p>Welcome to <b id='para'>My Website</b>........ </p> 
+<input type='text' id='userInput' value='Enter Text Here'
+onfocus="if(this.value=='Enter Text Here')this.value=''" 
+onblur="if(this.value=='')this.value='Enter Text Here'"/>
+<input type='button' onclick='changeText()' value='Change Text'/>
+</body>
+</html>

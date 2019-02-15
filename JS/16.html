@@ -1,0 +1,19 @@
+<html>
+<head>
+<script language="javascript">
+function validate(value)
+{
+ if(value<0)
+ {
+ alert("plz input a value that is greater or equal to zero");
+ }
+} 
+</script>
+</head>
+<body>
+<h1>Try to input a value less than zero:<br></h1>
+<form>
+<input type="text" onBlur="validate(this.value)">
+</form>
+</body>
+</html>

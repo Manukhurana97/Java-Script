@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Using Navigator Object</title>
+<!--The navigator object is used to find what type of browser you are working on.
+The self keyword is used to refer current window.
+Property- appCodeName(represents the code name of the browser)
+          appName(represents the name of the browser)
+		  appVersion(represents the version of browser)
+-->
+<script language="javascript">
+function tellMe()
+{
+ self.document.write("<h2>Know me I am Browser</h2>");
+ self.document.write(navigator.appCodeName+" ");
+ self.document.write(navigator.appName);
+ self.document.write(navigator.appVersion+"<br>");
+}
+</script>
+</head>
+<body>
+<script language="javascript">
+tellMe();
+</script>
+</body>
+</html>

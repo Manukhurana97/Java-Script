@@ -1,0 +1,68 @@
+                                                        JAVASCRIPT
+														__________
+
+javascript work on java platform
+javascript is further classified in following types
+  a)jquery->
+  b)ajax-> live video etc(wirk on server)
+  c)angular js->
+  d)nod js-> (frame work)
+  e)Json-> data handling(used to store the objects in itself)
+  
+  
+                                                          SYNTEX
+                                                         _______
+  
+It need only editor and browser
+  
+   <script>
+    | 
+    |                  3types-> inline ,internal.external;
+   <script>
+  
+  
+onclick=""-> connect  b/w  jscript and html
+  
+  
+   3 main display methords
+   a) document.write("hello");->it wants variable to be declared insted of using directly.
+   b)console.log()->use by the programmer.used to check the program error in browser.
+   c)document.getElementById();-> used id selector.
+      Id.innerHTML("")->used to change the content already present. 
+
+alert("");-> used to give the message
+             its of 3 types
+			 1)alert();                         }
+			 2)prompt();                      	}  popup function		 
+			 3)conform();                       } 
+	  
+	  
+id if for js and class is for css
+
+document.querySelector("");-> can work on id,class.	  
+
+<style> is used in class.
+  .style.color=" ";
+
+
+                                                         Datatypes
+														 _________
+														 
+a) internal    b)String       c)float    d)array      e)objects       f)null
+														 
+
+														 Operators
+														 _________
+	 													 
+a)Arithmatic operators=>(+,-,*,/)
+b)asignment operators(+=,-=,*=,/=)
+c)comparison operators(<,>,==,=>,<=,===)=>(=== check datatype with data>
+d)logical operators(AND.OR,not)
+e)inc/dec oprators
+f)concat operators(+)=>number(a)+ number(b)
+														 
+														 Events
+														 ______
+
+1)onclick-> <buttion onclick="demo()">abc</button>
+           <script src="">												 
