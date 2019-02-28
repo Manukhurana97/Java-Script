@@ -1,0 +1,52 @@
+<html>
+<head>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load("current", {packages:['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+
+                ['Genre', 'Fantasy & Sci Fi', 'Romance', 'Mystery/Crime', 'General',
+                    'Western', 'Literature','Lit','demo', { role: 'annotation' } ],
+                ['2010', 110, 400, 200, 302, 180, 50, 100, 100,''],
+                ['2020', 160, 22, 230, 300, 160, 90, 100,  100,''],
+                ['2030', 280, 190, 290, 30, 120, 130, 100,  100,''],
+            ]);
+
+
+            var view = new google.visualization.DataView(data);
+
+
+
+            var options = {
+                width: 600,
+                height: 400,
+                legend: { position: 'bottom', maxLines: 3 },
+                bar: { groupWidth: '75%' },
+                isStacked: true,
+            };
+
+
+            var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
+            chart.draw(view, options);
+        }
+    </script>
+
+</head>
+
+<body>
+<table align="center">
+
+
+    <tr valign="top">
+
+        <div id="columnchart_values" style="width: 900px; height: 300px;"></div>
+    </tr>
+
+</table>
+
+</body>
+</html>
+
