@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js on fire</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Static/css/style.css">
+</head>
+<body>
+    <div class="flex-container">
+        <h2>Age in seconds</h2>
+        <div class="flex-box-container-1">
+            <div>
+                <button class="btn btn-primary btn-lg" onclick="indays()">Click me</button></div>
+            <div>
+                <button class="btn btn-danger btn-lg" onclick="reset()">reset</button>
+            </div>
+        </div>
+
+        <div class="flex-box-container-1">
+            <div id="flex-result">
+                
+            </div>
+            
+        </div>
+
+    </div>
+
+    <div class="flex-container">
+        <h2>Challange 2: Image generate</h2>
+
+        <div class="flix-box-container-2" id=flex-cat-gen>
+            <div>
+                <button class="btn btn-success btn-lg" id=cat-gen onclick="gencat()">Generate</button>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <div class="flex-container">
+        <h2>Challange 3: Rock, Paper, Scissors</h2>
+        <div class="flix-box-container-3" id="RPS">
+            <img id="Rock" src="https://www.pinclipart.com/picdir/middle/281-2816692_rock-clipart-small-rock-png-download.png"width=200, height=200 
+            onclick="rpfGame(this)">                  
+            <img id="Paper" src="https://www.clipartmax.com/png/middle/14-149026_lined-paper-lined-paper-notebook-paper-clipart-sheet-of-notebook-paper.png" width=200,
+             height=200 onclick="rpfGame(this)">
+            <img id="Scissors" src="https://www.pinclipart.com/picdir/middle/1-11382_ai-eps-svg-free-clipart-scissors-clipart-png.png" width=200, height=200 
+            onclick="rpfGame(this)" >
+            
+        </div>
+    </div>
+
+
+    
+    <div class="flex-container">
+        <h2>Challange 4: Color Change</h2>
+        <div class="flix-box-container-4" id="CC">
+            <form >
+                <select name="backdrop" id="color" onchange="buttonColorChange(this)">
+                    <option value="Random" >Random</option>
+                    <option value="Red" >Red</option>
+                    <option value="Green" >Green</option> 
+                    <option value="Reset" >Reset</option>
+                </select>
+            </form>
+            <button class="btn btn-success btn-lg" id="Green" ">Whatsapp</button>
+            <button class="btn btn-primary btn-lg" id="Blue" >Facebook</button>
+            <button class="btn btn-danger btn-lg" id="Red" >Youtube</button>
+            
+        </div>
+    </div>
+    
+    <script src="../Static/js/Script.js"></script>
+</body>
+</htm l>
